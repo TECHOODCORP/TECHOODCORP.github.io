@@ -1,0 +1,530 @@
+
+/* Custom Navbar Styles */
+nav {
+    background: linear-gradient(90deg, rgba(6, 6, 6, 0.5), rgba(0, 74, 173, 0.5));
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: #fff;
+    color: #054483;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(187, 42, 42, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.trans-color {
+    color: #fff;
+}
+
+.nav-link {
+    text-transform: uppercase;
+    font-size: 15px;
+    margin: auto 10px;
+    color: #fff;
+}
+
+.nav-link:hover, .nav-link:active, .nav-link:focus {
+    color: #e1bf15;
+}
+
+.nav-link.dropdown-toggle:focus,
+.nav-link.dropdown-toggle:active {
+    color: #e1bf15 !important;
+}
+
+nav img {
+    height: 50px;
+    margin-left: -20px;
+}
+
+.dropdown-item i {
+    margin-right: 5px;
+}
+    
+::selection {
+    background: #1a75ff;
+    color: #fff;
+}
+
+/* Custom Dropdown Styles */
+.dropdown-menu {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item {
+    color: #003366;
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+.dropdown-item:hover {
+    background-color: #f8f9fa;
+    color: #0056b3;
+}
+
+.dropdown-divider {
+    border-top: 1px solid #e9ecef;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+body {
+align-items: center; /* Center the form on smaller screens */
+}
+
+nav img {
+margin-left: 15px;
+}
+}
+
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    margin-top: 5px;
+    flex-wrap: wrap;
+}
+
+.profile-info-container {
+    background-color: #ffffff; 
+    backdrop-filter: blur(10px); 
+    box-shadow: 0 0px 8px rgba(0, 0, 0, 0.5);
+    color: #003366;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list-container {
+    background: #fff; 
+    backdrop-filter: blur(10px); 
+    box-shadow: 0 0px 8px rgba(0, 0, 0, 0.5);
+    color: #003366;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-info {
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 5px solid #003366;
+}
+
+.edit-profile-btn {
+    background-color: #003366;
+    color: #ffffff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: auto;
+    transition: background-color 0.3s ease;
+}
+
+.edit-profile-btn:hover {
+    background-color: #e1bf15;;
+}
+
+.list-group-item {
+    background-color: transparent; /* Remove the background color from list items */
+    color: #003366;
+    border: none;
+    padding: 10px 15px;
+    border-bottom: 1px solid #333333;
+}
+
+.list-group-item:last-child {
+    border-bottom: none;
+}
+
+.profile-header h1 {
+    text-align: center;
+    color: #003366;
+    margin-bottom: 40px;
+    font-size: 50px;
+    font-weight: 700;
+    margin-top: 130px; 
+}
+
+.game-info {
+    justify-content: left;
+}
+ 
+/* Profile Info Container - Left Aligned */
+.profile-info {
+    text-align: left; /* Left-align all content */
+    width: 100%; /* Take full width of container */
+    padding: 0 15px; /* Add some side padding */
+}
+
+h3 {
+    margin-bottom: 25px;
+}
+
+
+/* List Container - Responsive Styles */
+.list-container {
+    background: #fff;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0px 8px rgba(0, 0, 0, 0.5);
+    color: #003366;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 100%; /* Changed from fixed 600px to percentage */
+    max-width: 600px; /* Maximum width */
+    display: flex;
+    flex-direction: column;
+}
+
+.list-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.list-group-item {
+    background-color: transparent;
+    color: #003366;
+    border: none;
+    padding: 12px 15px;
+    border-bottom: 1px solid rgba(0, 51, 102, 0.2);
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.list-group-item:hover {
+    background-color: rgba(0, 51, 102, 0.05);
+}
+
+.list-group-item i {
+    width: 24px;
+    text-align: center;
+    margin-right: 12px;
+    color: #003366;
+    transition: all 0.3s ease;
+}
+
+.list-group-item:hover i {
+    color: #e1bf15;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .profile-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .profile-info-container,
+    .list-container {
+        width: 90%;
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 768px) {
+    .profile-header h1 {
+        font-size: 48px;
+        margin-top: 110px;
+    }
+    
+    .profile-info-container,
+    .list-container {
+        width: 95%;
+        padding: 15px;
+    }
+    
+    .list-group-item {
+        padding: 10px 12px;
+        font-size: 0.95rem;
+    }
+    
+    .list-group-item i {
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .profile-header h1 {
+        font-size: 36px;
+        margin-top: 100px;
+    }
+    
+    .profile-info-container,
+    .list-container {
+        width: 90%;
+        margin: 10px 0;
+        border-radius: 10px;
+    }
+    
+    .list-group-item {
+        padding: 8px 10px;
+    }
+    
+    .profile-picture {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+/*FOOTER*/
+.footer body {
+    margin: 0;
+    background: #333;
+}
+
+footer * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer {
+    background: linear-gradient(90deg, rgba(6, 6, 6, 0.5), rgba(0, 74, 173, 0.5));
+    backdrop-filter: blur(10px);
+}
+
+footer p {
+    color: #fff;
+    max-width: 25em;
+    font-size: 0.9em;
+    line-height: 23px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.media-icons li, .service-icons li {
+    display: inline-block;
+    margin: 0.5em 0.5em 0.5em 0;
+}
+
+.media-icons a {
+    font-size: 1.1em;
+    width: 2em;
+    height: 2em;
+    border: 1px #fff solid;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.footer .media-icons li a:hover {
+    background: #e1bf15;
+    color: #fff;
+    border-color: #e1bf15;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+    gap: 4em;
+    flex-wrap: wrap;
+    margin-top:5em;
+}
+
+.footer .menu {
+    margin-bottom: 2em;
+}
+
+.footer .menu li {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.footer .menu a {
+    transition: 0.3s;
+    font-weight: 600;
+    position: relative;
+    text-decoration: none;
+}
+
+.footer .menu li a:hover {
+    color: #e1bf15;
+}
+
+.footer .menu li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background: #e1bf15;
+    transition: width 0.3s ease-in-out;
+}
+
+.footer .menu li a:hover::after {
+    width: 100%;
+}
+
+/* Brand Section: Logos in a Row */
+.brand-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+
+/* Brand Logo */
+.brand-logo {
+    height: 60px;
+    width: auto;
+    display: block;
+}
+
+/* Side Logos (Techood & Niantic) */
+.side-logo {
+    height: 40px;
+    width: auto;
+}
+
+/* Disclaimer */
+.col5 {
+    text-align: justify;
+    color: #ccc;
+    font-size: 0.9em;
+    max-width: 25em;
+    line-height: 1.5;
+}
+
+/* Justified Disclaimer */
+.disclaimer {
+    text-align: justify; /* Justifies the text */
+    margin-bottom: 1em; /* Adds space before social media icons */
+    max-width: 500px; /* Adjust width for better readability */
+}
+
+/* Centering Social Icons Below Disclaimer */
+.media-icons {
+    display: flex;
+    justify-content: center; /* Centers the icons */
+    gap: 1em;
+    margin-top: 0.5em;
+    padding-left: 17px;
+}
+
+@media screen and (max-width: 1024px) {
+    footer .container {
+        flex-direction: column; /* Stack columns in smaller screens */
+        align-items: center; /* Center content */
+        text-align: center;
+        gap: 2em;
+    }
+
+    .brand-section {
+        flex-direction: column; /* Stack logos on smaller screens */
+        gap: 0.5em;
+    }
+
+    .media-icons {
+        justify-content: center;
+    }
+
+    .footer .menu {
+        text-align: center; /* Center menu items */
+    }
+
+    .footer .menu li {
+        display: inline-block;
+        margin: 0.5em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    footer .container {
+        display: grid;
+        grid-template-columns: 1fr; /* Single-column layout */
+        gap: 2em;
+        text-align: center;
+    }
+
+    .brand-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .menu {
+        padding: 0;
+    }
+
+    .footer .menu li {
+        display: block;
+        margin: 0.5em 0;
+    }
+
+    .disclaimer {
+        max-width: 90%; /* Adjust text width */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .brand-logo {
+        height: 50px; /* Reduce logo size */
+    }
+
+    .side-logo {
+        height: 30px;
+    }
+
+    .media-icons a {
+        font-size: 1em;
+        width: 1.8em;
+        height: 1.8em;
+    }
+
+    .footer .menu li {
+        font-size: 0.9em;
+    }
+
+    .disclaimer {
+        font-size: 0.85em;
+    }
+}
+
+@media (max-width: 768px) { 
+    .col5 {
+        text-align: left; /* Aligns text to the left */
+        margin-left: 20%; /* Moves the block to the right */
+        max-width: 70%; /* Adjust width for better layout */
+    }
+}

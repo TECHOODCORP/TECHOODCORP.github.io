@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+<nav class="py-3 navbar navbar-expand-lg fixed-top auto-hiding-navbar">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="poke.png" alt="logo">
+        </a>
+
+        <button class="navbar-toggler ml-auto custom-toggler" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#nav3">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse" id="nav3">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Shop</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">All products</a></li>
+                      <li><a class="dropdown-item" href="#">Item Boxes</a></li>
+                      <li><a class="dropdown-item" href="#">PokéCoins</a></li>
+                      <li><a class="dropdown-item" href="#">Daily Bundles</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Cart</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#" id="viewProfile"><i class="fas fa-user-circle"></i> View Profile</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fas fa-cog"></i> Settings & Privacy</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fas fa-question-circle"></i> Help & Support</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#" id="logout"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- END NAVBAR -->
+
+    <!-- PROFILE -->
+    <div class="profile-header"><h1>User Profile</h1></div>
+    <div class="profile-container">
+        <div class="profile-info-container">
+            <div class="profile-info">
+                <img src="nhica.JPG" alt="Profile Picture" class="profile-picture">
+                <h3>Alex Hulip</h3>
+                
+                <!-- Game Info Section with all details -->
+            <div class="game-info">
+                <div class="info-row">
+                    <i class="fas fa-envelope"></i>
+                    <span class="info-label">Email:</span>
+                    <span class="info-value">hulipalessandra@gmail.com</span>
+                </div>
+                <div class="info-row">
+                    <i class="fas fa-gamepad"></i>
+                    <span class="info-label">IGN:</span>
+                    <span class="info-value">PokeMaster</span>
+                </div>
+                <div class="info-row">
+                    <i class="fas fa-id-card"></i>
+                    <span class="info-label">Player ID:</span>
+                    <span class="info-value">8868 4451 7906</span>
+                </div>
+            </div>
+                
+                <button class="edit-profile-btn"><i class="fas fa-user-edit me-2"></i>Edit Profile</button>
+            </div>
+        </div>
+        
+        <div class="list-container">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                    <i class="fas fa-heart me-2"></i>Favorites
+                </li>
+                <li class="list-group-item">
+                    <i class="fas fa-paint-brush me-2"></i>Theme
+                </li>
+                <li class="list-group-item">
+                    <i class="fas fa-moon me-2"></i>Dark Mode
+                </li>
+                <li class="list-group-item">
+                    <i class="fas fa-cog me-2"></i>Settings
+                </li>
+                <li class="list-group-item">
+                    <i class="fas fa-info-circle me-2"></i>About Us
+                </li>
+                <li class="list-group-item">
+                    <i class="fas fa-trash me-2"></i>Clear Cache
+                </li>
+                <li class="list-group-item">
+                    <i class="fas fa-history me-2"></i>Clear History
+                </li>
+                <li class="list-group-item">
+                    <i class="fas fa-flag me-2"></i>Report a Problem
+                </li>
+                <li class="list-group-item">
+                    <i class="fas fa-sign-out-alt me-2"></i>Log Out
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!--FOOTER-->
+<footer class="footer">
+    <div class="footer-top">
+        <div class="container">
+            <!-- Column 1: Brand Logo with Side Logos -->
+            <div class="col1">
+                <div class="brand-section">
+                    <img src="techood.png" alt="Techood Logo" class="side-logo left">
+                    <a href="#">
+                        <img src="pokemonGo.png" alt="Pokémon GO" class="brand-logo">
+                    </a>
+                    <img src="niantic.png" alt="Niantic Logo" class="side-logo right">
+                </div>
+
+                <ul class="media-icons">
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-tiktok"></i></a></li>
+                </ul>
+            </div>
+
+            <!-- Column 2: Main Menu Links -->
+            <div class="col2">
+                <ul class="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Profile</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: GO Fest & Events -->
+            <div class="col3">
+                <ul class="menu">
+                    <li><a href="#">GO Fest</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Seasons</a></li>
+                    <li><a href="#">Events</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 4: Pokémon GO Live & More -->
+            <div class="col4">
+                <ul class="menu">
+                    <li><a href="#">Pokémon GO Live</a></li>
+                    <li><a href="#">Leaderboard</a></li>
+                    <li><a href="#">Community Day Map</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 5: Disclaimer with Social Media Icons Below -->
+            <div class="col5">
+                <p class="disclaimer">
+                    Disclaimer: All images used are the property of Niantic. This project is for educational purposes only, and no copyright infringement is intended.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--END OF FOOTER-->  
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
